@@ -1,9 +1,12 @@
 package com.training.javarest.training;
 
+import com.training.javarest.entity.Employee;
 import com.training.javarest.entity.Employer;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Day2 {
     public static void main(String args[]) {
@@ -29,8 +32,13 @@ public class Day2 {
 
 
             // HashMap
+            Map<String, Employer> employeeHashMap = new HashMap<>();
 
+            employeeHashMap.put("emp1", employer);
+            employeeHashMap.put("emp2", employer1);
 
+            System.out.println(employeeHashMap);
+            System.out.println(employeeHashMap.get("emp1"));
         }
     }
 }
